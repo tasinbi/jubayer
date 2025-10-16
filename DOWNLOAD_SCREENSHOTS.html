@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project Screenshots - Download Helper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #718096;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .instructions {
+            background: #edf2f7;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .instructions h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ol {
+            margin-left: 20px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .project-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .project-info {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .project-info p {
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+        
+        .filename {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 6px;
+            display: inline-block;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .status-ready {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .status-needed {
+            background: #f56565;
+            color: white;
+        }
+        
+        .checklist {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .checklist h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+        
+        .checklist label {
+            display: block;
+            padding: 10px;
+            margin: 8px 0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .checklist label:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+        }
+        
+        .checklist input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        
+        .final-note {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .final-note h3 {
+            margin-bottom: 10px;
+        }
+        
+        code {
+            background: rgba(0,0,0,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Portfolio Screenshots</h1>
+        <p class="subtitle">Download করুন এবং সঠিক নামে save করুন</p>
+        
+        <div class="instructions">
+            <h3>🎯 কিভাবে করবেন:</h3>
+            <ol>
+                <li>নিচের প্রতিটা website link এ click করুন</li>
+                <li>Website full load হওয়ার পর <strong>screenshot</strong> নিন</li>
+                <li>দেওয়া <strong>filename</strong> দিয়ে save করুন</li>
+                <li>Save location: <code>public/projects/</code></li>
+            </ol>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>1. Banglay IELTS <span class="status status-ready">✅ Ready</span></h3>
+            <div class="project-info">
+                <p><strong>📍 Website:</strong> <a href="http://banglayielts.com" target="_blank" style="color: white; text-decoration: underline;">http://banglayielts.com</a></p>
+                <p><strong>💾 Filename:</strong> <span class="filename">banglay-ielts.jpg</span></p>
+                <p><strong>📏 Size:</strong> Full page screenshot (1200x800px recommended)</p>
+            </div>
+            <a href="https://screenshot.guru/" target="_blank" class="btn">🔗 Take Screenshot</a>
+            <a href="http://banglayielts.com" target="_blank" class="btn btn-secondary">🌐 Visit Website</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>2. BIIC - Study Abroad <span class="status status-ready">✅ Ready</span></h3>
+            <div class="project-info">
+                <p><strong>📍 Website:</strong> <a href="http://biic.com.bd" target="_blank" style="color: white; text-decoration: underline;">http://biic.com.bd</a></p>
+                <p><strong>💾 Filename:</strong> <span class="filename">biic.jpg</span></p>
+                <p><strong>📏 Size:</strong> Full page screenshot (1200x800px recommended)</p>
+            </div>
+            <a href="https://screenshot.guru/" target="_blank" class="btn">🔗 Take Screenshot</a>
+            <a href="http://biic.com.bd" target="_blank" class="btn btn-secondary">🌐 Visit Website</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>3. Shamz Fashion <span class="status status-needed">⏳ Need Screenshot</span></h3>
+            <div class="project-info">
+                <p><strong>📍 Website:</strong> <a href="http://shamz.com.bd" target="_blank" style="color: white; text-decoration: underline;">http://shamz.com.bd</a></p>
+                <p><strong>💾 Filename:</strong> <span class="filename">shamz.jpg</span></p>
+                <p><strong>📏 Size:</strong> Full page screenshot (1200x800px recommended)</p>
+            </div>
+            <a href="https://screenshot.guru/" target="_blank" class="btn">🔗 Take Screenshot</a>
+            <a href="http://shamz.com.bd" target="_blank" class="btn btn-secondary">🌐 Visit Website</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h3>4. 90s Kick Official <span class="status status-needed">⏳ Need Screenshot</span></h3>
+            <div class="project-info">
+                <p><strong>📍 Website:</strong> <a href="http://90skickofficial.com" target="_blank" style="color: white; text-decoration: underline;">http://90skickofficial.com</a></p>
+                <p><strong>💾 Filename:</strong> <span class="filename">90s-kick.jpg</span></p>
+                <p><strong>📏 Size:</strong> Full page screenshot (1200x800px recommended)</p>
+            </div>
+            <a href="https://screenshot.guru/" target="_blank" class="btn">🔗 Take Screenshot</a>
+            <a href="http://90skickofficial.com" target="_blank" class="btn btn-secondary">🌐 Visit Website</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+            <h3>5. React E-commerce <span class="status status-needed">⏳ Optional</span></h3>
+            <div class="project-info">
+                <p><strong>📍 GitHub:</strong> <a href="https://github.com/tasinzuba/ema-jhon-simple" target="_blank" style="color: white; text-decoration: underline;">GitHub Repo</a></p>
+                <p><strong>💾 Filename:</strong> <span class="filename">react-ecommerce.jpg</span></p>
+                <p><strong>📝 Note:</strong> If you have a live demo, take screenshot. Otherwise, use GitHub preview.</p>
+            </div>
+            <a href="https://github.com/tasinzuba/ema-jhon-simple" target="_blank" class="btn btn-secondary">🌐 View on GitHub</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+            <h3>6. IELTS Mock Test (CD IELTS) <span class="status status-ready">✅ Ready</span></h3>
+            <div class="project-info">
+                <p><strong>📍 Info:</strong> Use the CD IELTS screenshot you have</p>
+                <p><strong>💾 Filename:</strong> <span class="filename">ielts-mock-test.jpg</span></p>
+                <p><strong>📝 Note:</strong> This is your IELTS Mock Test System project image</p>
+            </div>
+        </div>
+
+        <!-- Checklist -->
+        <div class="checklist">
+            <h3>✅ Checklist:</h3>
+            <label>
+                <input type="checkbox"> banglay-ielts.jpg saved in public/projects/
+            </label>
+            <label>
+                <input type="checkbox"> biic.jpg saved in public/projects/
+            </label>
+            <label>
+                <input type="checkbox"> shamz.jpg saved in public/projects/
+            </label>
+            <label>
+                <input type="checkbox"> 90s-kick.jpg saved in public/projects/
+            </label>
+            <label>
+                <input type="checkbox"> react-ecommerce.jpg saved (optional)
+            </label>
+            <label>
+                <input type="checkbox"> ielts-mock-test.jpg saved in public/projects/
+            </label>
+            <label>
+                <input type="checkbox"> All filenames are correct (lowercase, hyphens)
+            </label>
+            <label>
+                <input type="checkbox"> Ran <code>npm run dev</code> to check
+            </label>
+        </div>
+
+        <!-- Final Note -->
+        <div class="final-note">
+            <h3>🎉 সব screenshots save করার পর:</h3>
+            <p style="margin: 15px 0; font-size: 1.1em;">Terminal এ run করুন:</p>
+            <code style="background: rgba(0,0,0,0.2); padding: 10px 20px; display: inline-block; border-radius: 6px; font-size: 1.1em;">npm run dev</code>
+            <p style="margin-top: 15px;">Then visit: <strong>http://localhost:5173</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Save checkbox states
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox, index) => {
+            const savedState = localStorage.getItem(`checkbox-${index}`);
+            if (savedState === 'true') {
+                checkbox.checked = true;
+            }
+            
+            checkbox.addEventListener('change', () => {
+                localStorage.setItem(`checkbox-${index}`, checkbox.checked);
+            });
+        });
+    </script>
+</body>
+</html>
