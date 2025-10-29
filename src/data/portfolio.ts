@@ -135,13 +135,13 @@ export const projects: Project[] = [
   },
   {
     id: "5",
-    title: "React E-commerce",
+    title: "Tasin E-commerce",
     description: "Modern React-based e-commerce application",
     longDescription: "A full-featured e-commerce application built with React, featuring product catalog, shopping cart, user authentication, payment processing, and responsive design. Demonstrates modern React development practices and state management.",
     image: "/projects/background.jpeg",
     technologies: ["React", "JavaScript", "CSS", "E-commerce", "State Management", "Responsive Design"],
-    liveUrl: "",
-    githubUrl: "https://github.com/tasinzuba/ema-jhon-simple",
+    liveUrl: "https://react-e-commerce-main-zeta.vercel.app/",
+    githubUrl: "https://github.com/tasinzuba/React_E-Commerce-main",
     featured: true,
     category: "web"
   },
@@ -151,8 +151,8 @@ export const projects: Project[] = [
     description: "Comprehensive IELTS practice and assessment platform",
     longDescription: "An advanced IELTS mock test system with practice exams, scoring algorithms, performance analytics, and detailed feedback. Features include timed tests, question randomization, progress tracking, and comprehensive reporting.",
     image: "/projects/cdielts.png",
-    technologies: ["React", "Node.js", "MySQL", "Assessment System", "Analytics", "Real-time Scoring"],
-    liveUrl: "",
+    technologies: ["Vue.js", "Laravel", "MySQL", "Assessment System", "Analytics", "Real-time Scoring"],
+    liveUrl: "http://cdielts.org",
     githubUrl: "",
     featured: true,
     category: "web"
