@@ -77,7 +77,7 @@ export const personalInfo: PersonalInfo = {
   bio: "I'm a Full-Stack Web Developer and Digital Marketing Expert specializing in WordPress, React, Node.js, Facebook Marketing, SEO, and comprehensive digital marketing strategies. Currently working at Banglay IELTS since December 2024, focusing on web development, digital marketing, and content optimization. I'm passionate about creating high-performance applications and driving business growth through effective digital marketing campaigns.",
   resume: "/Md-Jubayer-Ahamed-CV.pdf",
   social: {
-    github: "https://github.com/tasinzuba",
+    github: "https://github.com/tasinbi",
     linkedin: "https://www.linkedin.com/in/md-jubayer-ahamed-b92736358/",
     facebook: "https://www.facebook.com/jubayerahamed82",
     whatsapp: "https://wa.me/8801732134482"
@@ -242,7 +242,7 @@ export const experiences: Experience[] = [
     company: "Programming Hero",
     position: "Student - Batch 8",
     location: "Online",
-    startDate: "2023-01",
+    startDate: "2023-06",
     endDate: "2023-12",
     current: false,
     description: "Completed comprehensive web development course covering modern technologies and best practices.",
