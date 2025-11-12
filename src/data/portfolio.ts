@@ -75,7 +75,7 @@ export const personalInfo: PersonalInfo = {
   phone: "+880 1732134482",
   location: "Dhaka, Bangladesh",
   bio: "I'm a Full-Stack Web Developer and Digital Marketing Expert specializing in WordPress, React, Node.js, Facebook Marketing, SEO, and comprehensive digital marketing strategies. Currently working at Banglay IELTS since December 2024, focusing on web development, digital marketing, and content optimization. I'm passionate about creating high-performance applications and driving business growth through effective digital marketing campaigns.",
-  resume: "/Md-Jubayer-Ahamed.pdf",
+  resume: "tasinbi/jubayer/src/data/Md-Jubayer-Ahamed.pdf",
   social: {
     github: "https://github.com/tasinbi",
     linkedin: "https://www.linkedin.com/in/md-jubayer-ahamed-b92736358/",
