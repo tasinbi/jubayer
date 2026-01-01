@@ -173,7 +173,7 @@ const ProfileCanvas = () => {
         }}
       />
 
-      {/* Main Profile Container with Glassmorphism */}
+     {/* Main Profile Container with Glassmorphism */}
       <motion.div
         className="relative w-[450px] h-[450px] group"
         initial={{ scale: 0, rotate: -180 }}
