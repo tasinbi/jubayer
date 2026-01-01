@@ -172,10 +172,9 @@ const ProfileCanvas = () => {
           ease: "linear",
         }}
       />
-
-      {/* Main Profile Container with Glassmorphism */}
+{/* Main Profile Container with Glassmorphism */}
       <motion.div
-        className="relative w-[350px] h-[350px] group"
+        className="relative w-[450px] h-[450px] group"
         initial={{ scale: 0, rotate: -180 }}
         animate={{ scale: 1, rotate: 0 }}
         transition={{
@@ -203,7 +202,7 @@ const ProfileCanvas = () => {
         {/* Hexagon Shape with Gradient Border */}
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.div
-            className="relative w-[320px] h-[320px]"
+            className="relative w-[420px] h-[420px]"
             style={{
               clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
             }}
