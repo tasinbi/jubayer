@@ -296,19 +296,26 @@ const ProfileCanvas: React.FC = () => {
                 <motion.div
                   className="absolute inset-0 opacity-30"
                   style={{
-                    background: 'linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
+                    background:
+                      'linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1), transparent)',
                   }}
                   animate={{ x: ['-100%', '100%'] }}
                   transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 />
 
-                {/* Image area (IMPORTANT FIX) */}
+                {/* Image area (UPDATED COLOR HERE) */}
                 <div
                   className="absolute inset-[12px] overflow-hidden"
                   style={{ clipPath: CLIP_OCTAGON }}
                 >
                   {/* A nice backdrop so object-contain looks premium */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.18), transparent 55%), #f44236',
+                    }}
+                  />
 
                   <img
                     src="/profile-photo.jpg"
@@ -591,7 +598,10 @@ const Hero: React.FC = () => {
         transition={{ delay: 1, duration: 0.5 }}
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
       >
-        <a href="#about" className="flex flex-col items-center gap-2 text-gray-400 hover:text-primary-500 transition-colors">
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-gray-400 hover:text-primary-500 transition-colors"
+        >
           <span className="text-sm">Scroll Down</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
