@@ -287,11 +287,14 @@ const ProfileCanvas: React.FC = () => {
                 clipPath: CLIP_OCTAGON,
               }}
             >
-              {/* Glass bg */}
-              <div
-                className="w-full h-full backdrop-blur-xl bg-gradient-to-br from-gray-900/80 via-gray-800/70 to-gray-900/90 relative overflow-hidden"
-                style={{ clipPath: CLIP_OCTAGON }}
-              >
+             <div
+  className="w-full h-full backdrop-blur-xl relative overflow-hidden"
+  style={{
+    clipPath: CLIP_OCTAGON,
+    background: 'linear-gradient(135deg, #f44236cc, #f44236aa)',
+  }}
+>
+
                 {/* Shine */}
                 <motion.div
                   className="absolute inset-0 opacity-30"
